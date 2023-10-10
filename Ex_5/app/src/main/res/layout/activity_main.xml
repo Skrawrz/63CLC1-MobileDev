@@ -49,12 +49,11 @@
         android:layout_height="wrap_content"
         android:paddingLeft="55dp"
         android:paddingRight="55dp">
+
         <EditText
+            android:id="@+id/num1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="165"
-            android:id="@+id/num1">
-        </EditText>
+            android:layout_height="wrap_content"></EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -76,7 +75,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="64"
             android:id="@+id/num2">
         </EditText>
     </LinearLayout>
@@ -89,7 +87,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CALCULATE"
-            android:background="#32BACC">
+            android:background="#32BACC"
+            android:id="@+id/btnCalculate"
+            android:onClick="XuLyCalculate">
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -110,9 +110,9 @@
         android:layout_gravity="center"
         android:paddingTop="20dp">
         <TextView
+            android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="23.5"
             android:textColor="#A68787">
         </TextView>
     </LinearLayout>
@@ -121,11 +121,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Normal"
-            android:textColor="#A68787">
-        </TextView>
+            android:id="@+id/ttrang"
+            android:textColor="#A68787"></TextView>
     </LinearLayout>
 </LinearLayout>

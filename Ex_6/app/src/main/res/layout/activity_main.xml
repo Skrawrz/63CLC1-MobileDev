@@ -25,16 +25,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="30dp">
+
         <EditText
+            android:id="@+id/num1"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="10"
-            android:id="@+id/num1">
+            android:layout_height="wrap_content">
         </EditText>
+
         <EditText
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="5"
             android:id="@+id/num2">
         </EditText>
     </LinearLayout>
@@ -49,30 +49,34 @@
             android:layout_height="50dp"
             android:text="+"
             android:layout_margin="2dp"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:onClick="XuLyCong"/>
         <Button
             android:id="@+id/button2"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:text="-"
             android:layout_margin="2dp"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:onClick="XuLyTru"/>
         <Button
             android:id="@+id/button3"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:text="*"
             android:layout_margin="2dp"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:onClick="XuLyNhan"/>
         <Button
             android:id="@+id/button4"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:text="/"
             android:layout_margin="2dp"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:onClick="XuLyChia"/>
     </LinearLayout>
-    <LinearLayout
+<!--    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="40dp"
@@ -84,5 +88,5 @@
             android:textSize="40dp"
             android:textColor="#9C8A8A">
         </TextView>
-    </LinearLayout>
+    </LinearLayout>-->
 </LinearLayout>
