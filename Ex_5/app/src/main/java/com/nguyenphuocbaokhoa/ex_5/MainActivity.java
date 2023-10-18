@@ -28,25 +28,16 @@ public class MainActivity extends AppCompatActivity {
         EditText editText_Height=findViewById(R.id.num1);
         EditText editText_Weight=findViewById(R.id.num2);
         TextView textView_result=findViewById(R.id.result);
-        //TextView textView_ttrang=findViewById(R.id.ttrang);
-        double your_Height =Double.parseDouble(editText_Height.getText().toString()) ;
-        double your_Weight =Double.parseDouble(editText_Weight.getText().toString()) ;
-        //String ttrang=textView_ttrang.getText().toString();
-        double ketQua = your_Weight/your_Height*your_Height;
-        String result=Double.toString(ketQua);
-        if(ketQua<18.5){
-            System.out.println(ketQua);
-            result="Gầy";
-        }
-        else if (ketQua>=18.5&&ketQua<22.9) {
-            System.out.println(ketQua);
-            result="Bình thường";
-        }
-        else if (ketQua>=23) {
-            System.out.println(ketQua);
-            result="Thừa cân";
-        }
-
-        Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+        TextView textView_ttrang=findViewById(R.id.ttrang);
+        float your_Height =Float.parseFloat(String.valueOf(editText_Height.getText())) ;
+        float your_Weight =Float.parseFloat(String.valueOf(editText_Weight.getText())) ;
+        float ketQua = your_Weight/(your_Height*your_Height);
+        textView_result.setText(String.valueOf(ketQua));
+        if(ketQua<18.5)
+            textView_ttrang.setText("Gầy");
+        else if(ketQua>=18.5&&ketQua<=24.9)
+            textView_ttrang.setText("Bình thường");
+        else if (ketQua>=25)
+            textView_ttrang.setText("Béo phí");
     }
 }
