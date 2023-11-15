@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_cau4"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang thông tin cá nhân"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên: Nguyễn Phước Bảo Khoa"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nghề nghiệp: Sinh viên"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trường: Đại học Nha Trang"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nghành: Công nghệ thông tin"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lớp: 63CNTT.CLC1"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSSV: 63130584"
+        android:textSize="20dp"/>
+</LinearLayout>
