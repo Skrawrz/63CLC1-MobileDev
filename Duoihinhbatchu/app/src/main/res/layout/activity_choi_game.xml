@@ -8,9 +8,22 @@
     android:background="@mipmap/background"
     tools:context=".ChoiGameActivity">
     <RelativeLayout
-
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txvTienNguoiDung"
+            android:text="10"
+            android:background="@drawable/bg_tien"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:minWidth="100dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+        </TextView>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,10 +53,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <GridView
+            android:layout_marginBottom="60dp"
             android:id="@+id/gdvDapAn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
         </GridView>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp">
+            <Button
+                android:onClick="moGoiY"
+                android:text="Gợi ý"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp">
+            </Button>
+            <Button
+                android:onClick="doiCauHoi"
+                android:text="Đổi câu hỏi"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </Button>
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
