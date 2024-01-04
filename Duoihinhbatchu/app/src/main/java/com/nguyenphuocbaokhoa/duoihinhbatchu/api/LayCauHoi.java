@@ -22,7 +22,7 @@ public class LayCauHoi extends AsyncTask<Void, Void, Void> {
     protected Void doInBackground(Void... voids) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("http://192.168.101.39/duoihinhbatchu/layCauHoi.php")
+                .url("http://10.160.14.160/duoihinhbatchu/layCauHoi.php")
                 .build();
         Response response = null;
         try {
